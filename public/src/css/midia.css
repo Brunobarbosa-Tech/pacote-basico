@@ -1,0 +1,105 @@
+@import url(background.css);
+@import url(style.css);
+
+/* TABLET */
+@media (max-width: 768px) {
+
+    .painel {
+        width: 90%;
+        height: auto;
+
+        padding: 25px 15px;
+    }
+
+    .painel img {
+        width: 220px;
+        max-width: 90%;
+    }
+
+    .botao h1 {
+        font-size: 2rem;
+    }
+
+    .botao h2 {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+
+    .btns {
+        margin-top: 20px;
+    }
+
+    .botoes .btns button {
+        width: 90px;
+        height: 45px;
+
+        font-size: 1rem;
+    }
+}
+
+
+/* CELULAR */
+@media (max-width: 480px) {
+
+    .painel {
+        width: 75%;
+        height: auto;
+
+        padding: 20px 10px;
+
+        border-radius: 20px;
+    }
+
+    .painel img {
+        width: 180px;
+        max-width: 90%;
+    }
+
+    .botao h1 {
+        font-size: 1.5rem;
+    }
+
+    /* .botoes h2 {
+        font-size: 1rem;
+
+        line-height: 1.5;
+    } */
+
+    span {
+        margin-top: 8px;
+    }
+
+    .btns {
+        margin-top: 20px;
+    }
+
+    .botoes .btns button {
+        width: 80px;
+        height: 40px;
+
+        font-size: .95rem;
+    }
+}
+
+
+/* CELULAR PEQUENO */
+@media (max-width: 360px) {
+
+    .painel img {
+        width: 150px;
+    }
+
+    .botoes h1 {
+        font-size: 1.3rem;
+    }
+
+    .botoes h2 {
+        font-size: .95rem;
+    }
+
+    .botoes .btns button {
+        width: 75px;
+        height: 38px;
+        font-size: .9rem;
+    }
+}

@@ -1,0 +1,50 @@
+@import url(style.css);
+@import url(casal.css);
+@import url(midia.css);
+@import url(background.css);
+
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* CORES PRINCIPAIS */
+    --cor-1: #000000;
+    --cor-2: #BE1E2D;
+    --cor-3: #ff4d6d;
+    --cor-4: #ffffff;
+    --cor-5: #e2e8f0;
+    --cor-6: #acb5c2;
+
+    /* VARIAÇÕES ROMÂNTICAS */
+    --red-dark: #8B0000;
+    --red-soft: #ff758f;
+    --red-pink: #ffb3c1;
+    --wine: #7f1d1d;
+
+    /* FUNDOS */
+    --bg-dark: #0f172a;
+    --bg-card: #1e293b;
+    --bg-light: #f8fafc;
+
+    /* CINZAS */
+    --gray-100: #f1f5f9;
+    --gray-200: #cbd5e1;
+    --gray-300: #94a3b8;
+    --gray-400: #64748b;
+
+    /* SOMBRAS */
+    --shadow-red: rgba(190, 30, 45, 0.30);
+    --shadow-dark: rgba(0, 0, 0, 0.20);
+
+    /* FONTES */
+    --font-1: "Quicksand", sans-serif;
+}

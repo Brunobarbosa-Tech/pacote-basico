@@ -1,0 +1,93 @@
+.botao {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* .painel {
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+    padding-top: 30px;
+    text-align: center;
+    background-color: rgba(248, 250, 252, 0.683);
+    border: 3px solid var(--shadow-dark);
+    z-index: 1;
+} */
+
+.painel {
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    padding-top: 30px;
+    text-align: center;
+    background: rgba(248, 250, 252, 0.402);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.botao h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--cor-1);
+    font-family: var(--font-1);
+    font-weight: 900;
+}
+
+.botao img {
+    width: 300px;
+    padding-top: 30px;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+.botao .btns button {
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    color: var(--cor-4);
+    font-family: var(--font-1);
+    font-weight: 800;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.btns button {
+    border-radius: 12px;
+    border: none;
+    transition: 0.3s;
+    background: var(--bg-card);
+}
+
+.btns button:hover {
+    transform: scale(1.03);
+    color: var(--cor-1);
+    background: var(--red-soft);
+}
+
+.wrapper {
+    pointer-events: none;
+    z-index: -1;
+}
+
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ff4d6d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: transform 0.08s ease-out;
+  box-shadow: 0 0 15px rgba(255, 77, 109, 0.6);
+}
