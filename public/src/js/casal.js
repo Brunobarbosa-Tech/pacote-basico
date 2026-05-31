@@ -1,53 +1,38 @@
-document.addEventListener("DOMContentLoaded", () => {
+function createParticle() {
+  const particle = document.createElement("div");
+  particle.classList.add("particle");
 
-    // CURSOR
-    const cursor = document.querySelector(".custom-cursor");
+  const stars = ["✩"];
 
-    document.addEventListener("mousemove", (e) => {
-        cursor.style.left = e.clientX - 6 + "px";
-        cursor.style.top = e.clientY - 6 + "px";
-    });
+  particle.textContent = stars[Math.floor(Math.random() * stars.length)];
 
-    // PARTICLES
-    function createParticle() {
-        const p = document.createElement("div");
-        p.classList.add("particle");
+  particle.style.left = Math.random() * 100 + "%";
 
-        p.style.left = Math.random() * 100 + "%";
+  particle.style.fontSize = Math.random() * 12 + 8 + "px";
 
-        document.querySelector(".particles").appendChild(p);
+  particle.style.animationDuration = Math.random() * 5 + 6 + "s";
 
-        setTimeout(() => p.remove(), 6000);
-    }
+  document.querySelector(".particles").appendChild(particle);
 
-    setInterval(createParticle, 300);
-});
-
-// SURPRISE
-function showSurprise() {
-    const msg = document.getElementById("specialMessage");
-
-    if (msg) {
-        msg.classList.add("show");
-    }
-
-    createHearts();
+  setTimeout(() => {
+    particle.remove();
+  }, 11000);
 }
 
-// HEARTS
-function createHearts() {
-    for (let i = 0; i < 20; i++) {
-        const heart = document.createElement("div");
-        heart.innerHTML = "❤️";
+setInterval(createParticle, 200);
 
-        heart.style.position = "fixed";
-        heart.style.left = Math.random() * window.innerWidth + "px";
-        heart.style.top = Math.random() * window.innerHeight + "px";
-        heart.style.fontSize = "18px";
-        heart.style.zIndex = "9999";
+const card = document.querySelector(".love-card");
 
-        document.body.appendChild(heart);
+setInterval(() => {
+  card.style.boxShadow = `
+    0 0 45px rgba(255, 255, 255, 0.10),
+    0 0 90px rgba(255, 255, 255, 0.18)
+  `;
 
-        setTimeout(() => heart.remove(), 2000);
-    }
-}
+  setTimeout(() => {
+    card.style.boxShadow = `
+      0 0 35px rgba(255, 255, 255, 0.07),
+      0 0 70px rgba(255, 255, 255, 0.12)
+    `;
+  }, 900);
+}, 2500);

@@ -9,14 +9,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
     gap: 20px;
-
     z-index: 99999;
-
     opacity: 0;
     visibility: hidden;
-
     transition: 0.4s;
 }
 
@@ -48,15 +44,12 @@
 
 .loading-text {
     color: white;
-
     font-size: 22px;
-
     font-family: sans-serif;
 }
 
 .dots span {
     animation: blink 1.5s infinite;
-
     font-size: 28px;
 }
 
@@ -67,7 +60,6 @@
 .dots span:nth-child(3) {
     animation-delay: 0.4s;
 }
-
 
 @keyframes blink {
 

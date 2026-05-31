@@ -7,18 +7,6 @@
     flex-direction: column;
 }
 
-/* .painel {
-    margin: auto;
-    width: 500px;
-    height: 500px;
-    border-radius: 30px;
-    padding-top: 30px;
-    text-align: center;
-    background-color: rgba(248, 250, 252, 0.683);
-    border: 3px solid var(--shadow-dark);
-    z-index: 1;
-} */
-
 .painel {
     margin: auto;
     width: 500px;
@@ -69,7 +57,7 @@
 .btns button:hover {
     transform: scale(1.03);
     color: var(--cor-1);
-    background: var(--red-soft);
+    background: var( --gray-400);
 }
 
 .wrapper {
@@ -77,17 +65,4 @@
     z-index: -1;
 }
 
-.custom-cursor {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #ff4d6d;
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  transition: transform 0.08s ease-out;
-  box-shadow: 0 0 15px rgba(255, 77, 109, 0.6);
-}
+
